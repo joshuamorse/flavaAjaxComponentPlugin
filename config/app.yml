@@ -1,0 +1,3 @@
+all:
+  flava_ajax_component:
+    loading: ../flavaAjaxComponentPlugin/images/ajax-loader.gif

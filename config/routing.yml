@@ -1,0 +1,3 @@
+flava_ajax_component_show:
+  url: /ajax/component/:moduleName/:componentName
+  params: { module: flavaAjaxComponent, action: show }

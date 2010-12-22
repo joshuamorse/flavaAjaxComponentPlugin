@@ -8,17 +8,15 @@ plugin requires jQuery.
 Setup
 =====
 - enable the plugin in your project configuration file (e.g. config/ProjectConfiguration.class.php):
-  `
-  public function setup()
+  `public function setup()
   {
     $this->enablePlugins(array(
       'flavaAjaxComponentPlugin',
     ));
-  }
+  }`
 - add the flavaAjaxComponent module to your settings file (e.g. app/yourapp/settings.yml) file under enabled_modules:
-  `
-  enabled_modules:
-    - flavaAjaxComponent
+  `enabled_modules:
+    - flavaAjaxComponent`
 
 Basic Flow
 ==========

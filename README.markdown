@@ -4,6 +4,13 @@ Allows the use of include_ajax_component(). This functions as
 you would expect, in that it lazy-loads a component. This
 plugin requires jQuery.
 
+
+Setup
+=====
+- enable the plugin in your project configuration file (e.g. config/ProjectConfiguration.class.php).
+- add the flavaAjaxComponent module to your settings file (e.g. app/yourapp/settings.yml) file under enabled_modules.
+
+
 Basic Flow
 ==========
 - include_ajax_component

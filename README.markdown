@@ -10,3 +10,8 @@ Basic Flow
 - include_partial(ajax)
 - ajax load centralized component route/action (via jquery)
 - include_component
+
+Options
+=======
+- include_javascripts() on each component load via "loadjs" config option
+- head.js document ready (jquery) functionality via "headjs" config option

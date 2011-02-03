@@ -14,19 +14,19 @@ Install
 - Enable the plugin in your project configuration file:
 
 
-    /config/ProjectConfiguration.class.php
+      /config/ProjectConfiguration.class.php
 
 
 - Add the flavaAjaxComponent module to your settings file
 
 
-    /app/yourapp/settings.yml
+      /app/yourapp/settings.yml
 
 
 - Publish plugin assets:
 
 
-    ./symfony plugin:publish-assets
+      ./symfony plugin:publish-assets
 
 
 Basic Flow

@@ -1,5 +1,6 @@
 all:
   flava_ajax_component:
-    loading: ../flavaAjaxComponentPlugin/images/ajax-loader.gif
+    loading: '../flavaAjaxComponentPlugin/images/ajax-loader.gif'
     loadjs: false
     headjs: false
+    allow_direct_access: false

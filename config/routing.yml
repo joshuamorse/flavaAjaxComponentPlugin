@@ -1,3 +1,7 @@
 flava_ajax_component_show:
-  url: /ajax/component/:moduleName/:componentName
-  params: { module: flavaAjaxComponent, action: show }
+  url: /ajax/component/:module_name/:target_name
+  params: { module: flavaAjaxComponent, action: show, type: component }
+
+flava_ajax_partial_show:
+  url: /ajax/partial/:module_name/:target_name
+  params: { module: flavaAjaxComponent, action: show, type: partial }

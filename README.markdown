@@ -1,16 +1,21 @@
 flavaAjaxComponentPlugin
 ========================
-Allows the use of include_ajax_component(). This functions as
+
+Allows the use of include_ajax_component() and include_ajax_partial(). This functions as
 you would expect, in that it lazy-loads a component.
+
 
 
 Requirements
 ------------
+
 - jQuery
 
 
-Install
--------
+
+Installation
+------------
+
 - Enable the plugin in your project configuration file:
 
 
@@ -29,8 +34,10 @@ Install
       ./symfony plugin:publish-assets
 
 
+
 Basic Flow
 ----------
+
 The following is the primary request flow for flavaAjaxComponentPlugin:
   - User calls include_ajax_component(), which then calls...
   - include_partial('flavaAjaxComponent/ajax') passing the requested module/component
@@ -38,7 +45,9 @@ The following is the primary request flow for flavaAjaxComponentPlugin:
   - The route points to a show template which simply calls include_component()
 
 
+
 Options
 -------
+
 - include_javascripts() on each component load via "loadjs" config option -- useful if you have an ajax component with javascript dependencies.
 - head.js document ready (jquery) functionality via "headjs" config option -- useful if you're using head.js.

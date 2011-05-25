@@ -2,30 +2,20 @@
 
 function include_ajax_component($module_name, $target_name, $user_options = array())
 {
-  $base_options['module_name'] = $module_name;
-  $base_options['target_name'] = $target_name;
-  $base_options['type'] = 'component';
-
-  foreach ($user_options as $key => $val)
-  {
-    $base_options[$key] = $val;
-  }
-
-  $base_options['data'] = 'datasd';
-
-  include_partial('flavaAjaxComponent/ajax', $base_options);
+  include_ajax_view($module_name, $target_name, $user_options, 'component');
 }
 
 function include_ajax_partial($module_name, $target_name, $user_options = array())
 {
-  $base_options['module_name'] = $module_name;
-  $base_options['target_name'] = $target_name;
-  $base_options['type'] = 'partial';
+  include_ajax_view($module_name, $target_name, $user_options, 'partial');
+}
 
-  foreach ($user_options as $key => $val)
-  {
-    $base_options[$key] = $val;
-  }
+function include_ajax_view($module_name, $target_name, $user_options, $type)
+{
+  $options['module_name'] = $module_name;
+  $options['target_name'] = $target_name;
+  $options['type'] = $type;
+  $options = array_merge($options, $user_options);
 
-  include_partial('flavaAjaxComponent/ajax', $base_options);
+  include_partial('flavaAjaxComponent/ajax', $options);
 }

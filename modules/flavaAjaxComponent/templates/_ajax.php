@@ -9,7 +9,7 @@
 
 <?php
   //var_dump($this->partialVars); die;
-  //var_dump($this->getAttributeHolder()); die;
+  //var_dump($this->getAttributeHolder()->parameters); die;
 ?>
 
 <script type="text/javascript">
@@ -20,9 +20,8 @@
   <?php endif ?>
     $('#<?php echo $module_name ?>-<?php echo $target_name ?>').load(
       '<?php
-        echo url_for('flava_ajax_' . $type . '_show', array('module_name' => $module_name, 'target_name' => $target_name))
-        // pass options here
-        //echo url_for('flava_ajax_' . $type . '_show', $this->partialVars)
+        //echo url_for('flava_ajax_' . $type . '_show', array('module_name' => $module_name, 'target_name' => $target_name))
+        echo url_for('flava_ajax_' . $type . '_show', $this->partialVars)
       ?>'
     );
   });

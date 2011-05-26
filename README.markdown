@@ -1,5 +1,9 @@
 flavaAjaxComponentPlugin
 ========================
+
+The plugin is deprecated in favor of flavaAjaxViewPlugin: https://github.com/joshuamorse/flavaAjaxView
+
+
 Allows the use of include_ajax_component(). This functions as
 you would expect, in that it lazy-loads a component.
 
